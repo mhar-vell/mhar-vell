@@ -36,7 +36,7 @@ Here are some ideas to get you started:
 ##
   
 <div>
-  <a>Centipede Pac Man in action commits 🐍 👾 
+  <a>Centipede Pac Man in action commits 🐛 👾 
     
   </a>
 </div>
