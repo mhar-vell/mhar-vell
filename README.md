@@ -31,10 +31,10 @@ Here are some ideas to get you started:
 <!--   <img align="center" alt="Html" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"> -->
   <img align="center" alt="Jekyll" height="30" width="40" src="https://github.com/jekyll/brand/blob/master/jekyll-logo-light-transparent.png">
  <!-- img align="center" alt="Ruby" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" /-->
-  <i class="devicon-latex-original">
-  <img align="center" alt="Latex" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg">
-  </i>
-    
+  
+  <img align="center" alt="Latex" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original-wordmark.svg">
+
+          
 </div>
   
 ##
