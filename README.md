@@ -8,7 +8,7 @@ Here are some ideas to get you started:
 - 🔭 I’m currently working on fault prognosis.
 - 🌱 I’m currently learning Julia.
 - 👯 I’m looking to collaborate on R projects.
-- 📫 How to reach me: <a href="https://www.linkedin.com/in/marco-reis-061618/">LinkedIn</a> or <a href="https://mhar-vell.github.io/portfolio/index.html/">My Portfolio</a>.
+- 📫 How to reach me: <a href="https://www.linkedin.com/in/marco-reis-061618/">LinkedIn</a> or <a href="https://mhar-vell.github.io/portfolio/">My Portfolio</a>.
 
 <!-- - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
