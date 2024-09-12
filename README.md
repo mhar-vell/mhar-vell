@@ -5,7 +5,7 @@
 -->
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on fault prognosis.
+- 🔭 I’m currently working on project management.
 - 🌱 I’m currently learning Julia.
 - 👯 I’m looking to collaborate on R projects.
 - 📫 How to reach me: <a href="https://www.linkedin.com/in/marco-reis-061618/">LinkedIn</a> or <a href="https://mhar-vell.github.io/portfolio/">My Portfolio</a>.
@@ -41,7 +41,7 @@ Here are some ideas to get you started:
   
 ##
   
-<div>
+<!-- <div>
   <a>Centipede Pac Man in action commits 🐛 👾 
     
   </a>
@@ -51,4 +51,4 @@ Here are some ideas to get you started:
   
   ![Snake animation](https://github.com/mhar-vell/mhar-vell/blob/output/github-contribution-grid-snake2.svg)
   
-</div>
+</div> -->
