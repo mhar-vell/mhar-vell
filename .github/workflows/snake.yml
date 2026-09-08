@@ -1,0 +1,46 @@
+name: Generate snake animation
+
+on:
+  # roda a cada 12 horas
+  schedule:
+    - cron: "0 */12 * * *"
+
+  # permite rodar manualmente pela aba Actions
+  workflow_dispatch:
+
+  # roda também a cada push na branch principal
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: snake-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Gerar os arquivos da cobrinha
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          # usuário cujo gráfico de contribuições será lido
+          github_user_name: ${{ github.repository_owner }}
+
+          # um arquivo por linha; opções via query string
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      - name: Publicar na branch "output"
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
