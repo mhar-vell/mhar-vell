@@ -55,3 +55,11 @@ Here are some ideas to get you started:
      ![Snake animation](https://github.com/mhar-vell/mhar-vell/blob/output/github-contribution-grid-snake2.svg)
   
 </div> -->
+
+### 🐍 My Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com">
+  <img alt="GitHub Contribution Snake" src="https://github.com">
+</picture>
