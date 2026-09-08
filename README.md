@@ -36,19 +36,6 @@ Here are some ideas to get you started:
   
   <!-- img align="center" alt="Latex" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original-wordmark.svg" -->
 
- ### 🐍 My Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com">
-  <img alt="GitHub Contribution Snake" src="https://github.com">
-</picture>
-         
-</div>
-  
-### 🐍 My Contribution Snake
-
-![GitHub Contribution Snake](https://github.com)
   
 <!-- <div>
   <a>Centipede Pac Man in action commits 🐛 👾 
@@ -64,12 +51,6 @@ Here are some ideas to get you started:
 </div> -->
 
 ### 🐍 My Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com">
-  <img alt="GitHub Contribution Snake" src="https://github.com">
-</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
