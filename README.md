@@ -70,3 +70,12 @@ Here are some ideas to get you started:
   <source media="(prefers-color-scheme: light)" srcset="https://github.com">
   <img alt="GitHub Contribution Snake" src="https://github.com">
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/mhar-vell/mhar-vell/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)"
+          srcset="https://raw.githubusercontent.com/mhar-vell/mhar-vell/output/github-snake.svg" />
+  <img alt="snake eating my contributions"
+       src="https://raw.githubusercontent.com/mhar-vell/mhar-vell/output/github-snake.svg" />
+</picture>
