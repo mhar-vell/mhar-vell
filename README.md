@@ -38,8 +38,9 @@ Here are some ideas to get you started:
 </div>
   
 
-<div>
+
 ### 🐍 My Contribution Snake
+<div>
 <picture>
   <source media="(prefers-color-scheme: dark)"
           srcset="https://raw.githubusercontent.com/mhar-vell/mhar-vell/output/github-snake-dark.svg" />
