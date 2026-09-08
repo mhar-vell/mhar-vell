@@ -41,7 +41,7 @@ Here are some ideas to get you started:
   
 ### 🐍 My Contribution Snake
 
-![GitHub Contribution Snake](https://githubusercontent.com)
+![GitHub Contribution Snake](https://github.com)
   
 <!-- <div>
   <a>Centipede Pac Man in action commits 🐛 👾 
