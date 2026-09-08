@@ -35,7 +35,7 @@ Here are some ideas to get you started:
  <!-- img align="center" alt="Ruby" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" /-->
   
   <!-- img align="center" alt="Latex" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original-wordmark.svg" -->
-
+</div>
   
 <!-- <div>
   <a>Centipede Pac Man in action commits 🐛 👾 
