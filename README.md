@@ -39,17 +39,19 @@ Here are some ideas to get you started:
           
 </div>
   
-## 🐍 My Contribution Snake
+### 🐍 My Contribution Snake
+
+![GitHub Contribution Snake](https://githubusercontent.com)
   
 <!-- <div>
   <a>Centipede Pac Man in action commits 🐛 👾 
     
   </a>
-    ![Snake animation](https://github.com/mhar-vell/mhar-vell/blob/output/github-contribution-grid-snake2.svg)
-</div> -->
+
+</div>
   
 <div>
   
-  ![GitHub Contribution Snake](https://githubusercontent.com)
+     ![Snake animation](https://github.com/mhar-vell/mhar-vell/blob/output/github-contribution-grid-snake2.svg)
   
-</div>
+</div> -->
