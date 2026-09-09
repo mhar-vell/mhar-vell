@@ -42,6 +42,9 @@ jobs:
 
       - name: Acrescentar os rótulos de mês nos SVGs
         run: |
+          # a action snk roda num container como root, então os arquivos
+          # gerados ficam sem permissão de escrita para o usuário do runner
+          sudo chown -R "$(id -u):$(id -g)" dist
           python3 .github/scripts/add_month_labels.py dist/github-snake.svg --color '#57606a'
           python3 .github/scripts/add_month_labels.py dist/github-snake-dark.svg --color '#8b949e'
 
