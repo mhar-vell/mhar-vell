@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mhar-vell/mhar-vell/main/assets/header.jpg"
+  <img src="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@main/assets/header.jpg"
        width="100%"
        alt="Hazy mountain ridges receding into the distance at sunset" />
 </p>
