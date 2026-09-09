@@ -67,6 +67,10 @@ Here are some ideas to get you started:
 </picture>
 </div>
 
+
+<div style="display: inline_block"><br>
+  <img align="center" alt="Linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+  </div>
 ---
 
-<sub>Header artwork: <i>Firewatch</i> key art by <a href="https://ollymoss.com/">Olly Moss</a> for <a href="https://blog.camposanto.com/post/79908513045/official-wallpapers-of-the-firewatch-key-art-by">Campo Santo</a>. Used here on a personal profile page; all rights remain with the original rights holders.</sub>
+<sub>Header photo by <a href="https://unsplash.com/@supergios">Jonny Gios</a> on <a href="https://unsplash.com/photos/hazy-mountain-layers-at-sunset-with-orange-sky-mts9UV3WRa0">Unsplash</a>, free to use under the Unsplash License.</sub>
