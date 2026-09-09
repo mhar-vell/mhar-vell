@@ -64,7 +64,6 @@ Here are some ideas to get you started:
   <img alt="NumPy" src="https://img.shields.io/badge/NumPy-1F2328?style=flat-square&logo=numpy&logoColor=white" />
   <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-1F2328?style=flat-square&logo=opencv&logoColor=white" />
   <img alt="FreeCAD" src="https://img.shields.io/badge/FreeCAD-1F2328?style=flat-square&logo=freecad&logoColor=white" />
-  <img alt="Darktable" src="https://img.shields.io/badge/Darktable-1F2328?style=flat-square" />
 <br clear="all">
   
 
