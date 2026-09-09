@@ -23,7 +23,9 @@ API = "https://api.github.com/graphql"
 
 WIDTH = 340
 PAD = 16
-TITLE_COLOR = "#C92227"
+# Mesma cor dos demais títulos do perfil, que seguem o tema do leitor.
+TITLE_LIGHT = "#1F2328"
+TITLE_DARK = "#e6edf3"
 TEXT_COLOR = "#7d8590"
 TRACK_COLOR = "#7d859033"
 FONT = ('-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,'
@@ -82,8 +84,13 @@ def fetch_languages(login: str, token: str) -> dict[str, tuple[int, str]]:
         cursor = repos["pageInfo"]["endCursor"]
 
 
-def build(langs: list[tuple[str, float, str]]) -> str:
-    """langs: (name, percentage, colour), already sorted and trimmed."""
+def build(langs: list[tuple[str, float, str]], title: str) -> str:
+    """langs: (name, percentage, colour), already sorted and trimmed.
+
+    A media query would be simpler than shipping two files, but Chrome
+    renders an <img>-embedded SVG under the light scheme regardless of the
+    page, so the theme has to be chosen outside, by <picture>.
+    """
     rows = (len(langs) + COLS - 1) // COLS
     height = LEGEND_Y + rows * ROW_H
     inner = WIDTH - PAD * 2
@@ -93,7 +100,7 @@ def build(langs: list[tuple[str, float, str]]) -> str:
         f'height="{height}" viewBox="0 0 {WIDTH} {height}" role="img" '
         f'aria-label="Most used languages">',
         f"<style>text{{font-family:{FONT}}}"
-        f".t{{font-size:15px;font-weight:600;fill:{TITLE_COLOR}}}"
+        f".t{{font-size:15px;font-weight:600;fill:{title}}}"
         f".l{{font-size:11.5px;fill:{TEXT_COLOR}}}</style>",
         f'<text class="t" x="{PAD}" y="26">Most Used Languages</text>',
         f'<rect x="{PAD}" y="{BAR_Y}" width="{inner}" height="{BAR_H}" '
@@ -131,6 +138,8 @@ def main() -> int:
     parser.add_argument("--user", required=True)
     parser.add_argument("--out", required=True)
     parser.add_argument("--count", type=int, default=8)
+    parser.add_argument("--theme", default="light",
+                        choices=("light", "dark"))
     args = parser.parse_args()
 
     token = os.environ.get("GITHUB_TOKEN")
@@ -148,7 +157,8 @@ def main() -> int:
     langs = [(name, size / total * 100, color) for name, (size, color) in top]
 
     with open(args.out, "w", encoding="utf-8") as fh:
-        fh.write(build(langs) + "\n")
+        title = TITLE_DARK if args.theme == "dark" else TITLE_LIGHT
+        fh.write(build(langs, title) + "\n")
 
     print(f"{args.out}: " + ", ".join(f"{n} {p:.1f}%" for n, p, _ in langs))
     return 0
