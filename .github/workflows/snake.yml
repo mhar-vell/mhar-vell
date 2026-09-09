@@ -24,6 +24,9 @@ jobs:
       contents: write
 
     steps:
+      - name: Baixar o repositório (para acessar os scripts)
+        uses: actions/checkout@v4
+
       - name: Gerar os arquivos da cobrinha
         uses: Platane/snk@v3
         id: snake-gif
@@ -36,6 +39,11 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      - name: Acrescentar os rótulos de mês nos SVGs
+        run: |
+          python3 .github/scripts/add_month_labels.py dist/github-snake.svg --color '#57606a'
+          python3 .github/scripts/add_month_labels.py dist/github-snake-dark.svg --color '#8b949e'
 
       - name: Publicar na branch "output"
         uses: crazy-max/ghaction-github-pages@v4
