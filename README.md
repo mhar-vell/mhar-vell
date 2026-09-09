@@ -65,3 +65,7 @@ Here are some ideas to get you started:
        src="https://raw.githubusercontent.com/mhar-vell/mhar-vell/output/github-snake.svg" />
 </picture>
 </div>
+
+---
+
+<sub>Header artwork via <a href="https://www.wallpaperflare.com/">WallpaperFlare</a>, used here for a personal profile page. Rights belong to the original artist.</sub>
