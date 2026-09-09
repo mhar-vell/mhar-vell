@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mhar-vell/mhar-vell/main/assets/header.jpg"
+       width="100%"
+       alt="Sunset over the mountains, with a hiker looking out from a clifftop" />
+</p>
+
 ### Hi there 👋
 #### It's me, Marco *mhar-vell* Reis.
 <!--
