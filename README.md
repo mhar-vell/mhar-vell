@@ -69,4 +69,4 @@ Here are some ideas to get you started:
 
 ---
 
-<sub>Header artwork via <a href="https://www.wallpaperflare.com/">WallpaperFlare</a>, used here for a personal profile page. Rights belong to the original artist.</sub>
+<sub>Header artwork: <i>Firewatch</i> key art by <a href="https://ollymoss.com/">Olly Moss</a> for <a href="https://blog.camposanto.com/post/79908513045/official-wallpapers-of-the-firewatch-key-art-by">Campo Santo</a>. Used here on a personal profile page; all rights remain with the original rights holders.</sub>
