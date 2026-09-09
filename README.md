@@ -79,4 +79,4 @@ Here are some ideas to get you started:
 
 ---
 
-<sub>Header photo by <a href="https://unsplash.com/@supergios">Jonny Gios</a> on <a href="https://unsplash.com/photos/hazy-mountain-layers-at-sunset-with-orange-sky-mts9UV3WRa0">Unsplash</a>, free to use under the Unsplash License.</sub>
+Header photo by [Jonny Gios](https://unsplash.com/@supergios) on [Unsplash](https://unsplash.com/photos/hazy-mountain-layers-at-sunset-with-orange-sky-mts9UV3WRa0), free to use under the Unsplash License.
