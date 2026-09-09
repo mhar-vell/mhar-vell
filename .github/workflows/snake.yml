@@ -63,7 +63,7 @@ jobs:
           # porque media query não vale dentro de SVG carregado via <img>
           python3 .github/scripts/top_languages.py \
             --user "${{ github.repository_owner }}" \
-            --out dist/top-languages.svg --theme light
+            --out dist/top-languages-light.svg --theme light
           python3 .github/scripts/top_languages.py \
             --user "${{ github.repository_owner }}" \
             --out dist/top-languages-dark.svg --theme dark
@@ -80,7 +80,7 @@ jobs:
         run: |
           base=https://purge.jsdelivr.net/gh/${{ github.repository }}@output
           for f in github-snake.svg github-snake-dark.svg \
-                   top-languages.svg top-languages-dark.svg; do
+                   top-languages-light.svg top-languages-dark.svg; do
             # o jsDelivr cacheia a resposta negativa de um arquivo que
             # ainda não existia, e um expurgo só pega depois que a branch
             # propaga: insiste até o arquivo responder.
