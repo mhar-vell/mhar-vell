@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/mhar-vell/mhar-vell/main/assets/header.jpg"
        width="100%"
-       alt="Sunset over the mountains, with a hiker looking out from a clifftop" />
+       alt="Hazy mountain ridges receding into the distance at sunset" />
 </p>
 
 <p align="center">
