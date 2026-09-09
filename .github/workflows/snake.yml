@@ -48,6 +48,13 @@ jobs:
           python3 .github/scripts/add_month_labels.py dist/github-snake.svg --color '#57606a'
           python3 .github/scripts/add_month_labels.py dist/github-snake-dark.svg --color '#8b949e'
 
+      - name: Atualizar os contadores do perfil
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/profile_counters.py \
+            --user "${{ github.repository_owner }}" --out dist
+
       - name: Publicar na branch "output"
         uses: crazy-max/ghaction-github-pages@v4
         with:

@@ -1,3 +1,18 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mhar-vell/mhar-vell/main/assets/header.jpg"
+       width="100%"
+       alt="Sunset over the mountains, with a hiker looking out from a clifftop" />
+</p>
+
+<p align="center">
+  <img alt="Profile views"
+       src="https://komarev.com/ghpvc/?username=mhar-vell&label=profile%20views&color=FE4B1C&style=flat-square" />
+  <img alt="Public repositories"
+       src="https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmhar-vell%2Fmhar-vell%2Foutput%2Fcounters-repos.json" />
+  <img alt="Commits this month"
+       src="https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmhar-vell%2Fmhar-vell%2Foutput%2Fcounters-commits.json" />
+</p>
+
 ### Hi there 👋
 #### It's me, Marco *mhar-vell* Reis.
 <!--
