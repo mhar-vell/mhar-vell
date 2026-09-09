@@ -12,6 +12,7 @@
   <img alt="Commits this month"
        src="https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmhar-vell%2Fmhar-vell%2Foutput%2Fcounters-commits.json" />
 </p>
+It's time to rethink the way we make technology our ally. It is necessary to think of technology as an art. And art is something changeable, without limits, without owners.
 
 ### Hi there 👋
 #### It's me, Marco *mhar-vell* Reis.
