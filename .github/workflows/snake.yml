@@ -81,5 +81,15 @@ jobs:
           base=https://purge.jsdelivr.net/gh/${{ github.repository }}@output
           for f in github-snake.svg github-snake-dark.svg \
                    top-languages.svg top-languages-dark.svg; do
-            curl -sS -o /dev/null -w "$f -> %{http_code}\n" "$base/$f"
+            # o jsDelivr cacheia a resposta negativa de um arquivo que
+            # ainda não existia, e um expurgo só pega depois que a branch
+            # propaga: insiste até o arquivo responder.
+            for attempt in 1 2 3 4 5; do
+              curl -sS -o /dev/null "$base/$f"
+              code=$(curl -sI -o /dev/null -w "%{http_code}" \
+                "https://cdn.jsdelivr.net/gh/${{ github.repository }}@output/$f")
+              echo "$f -> $code (tentativa $attempt)"
+              if [ "$code" = "200" ]; then break; fi
+              sleep 5
+            done
           done
