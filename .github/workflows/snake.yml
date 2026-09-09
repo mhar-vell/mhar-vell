@@ -55,6 +55,13 @@ jobs:
           python3 .github/scripts/profile_counters.py \
             --user "${{ github.repository_owner }}" --out dist
 
+      - name: Gerar o card de linguagens mais usadas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/top_languages.py \
+            --user "${{ github.repository_owner }}" --out dist/top-languages.svg
+
       - name: Publicar na branch "output"
         uses: crazy-max/ghaction-github-pages@v4
         with:
@@ -62,3 +69,10 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Expurgar o cache do jsDelivr
+        run: |
+          base=https://purge.jsdelivr.net/gh/${{ github.repository }}@output
+          for f in github-snake.svg github-snake-dark.svg top-languages.svg; do
+            curl -sS -o /dev/null -w "$f -> %{http_code}\n" "$base/$f"
+          done

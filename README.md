@@ -38,25 +38,28 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ... -->
 
 
-<div>
-  <a href="https://github.com/mhar-vell">
-  <!--img height="180em" src="https://github-readme-stats.vercel.app/api?username=mhar-vell&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/-->
-  <!--img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhar-vell&layout=compact&langs_count=7&theme=dracula"/-->
-</div>
-  
-<div style="display: inline_block"><br>
+<table>
+<tr>
+<td valign="top">
+<img alt="Most used languages" width="340"
+     src="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/top-languages.svg" />
+</td>
+<td valign="top">
+<b>Technology Stack</b>
+<br><br>
   <img align="center" alt="Linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
   <img align="center" alt="R" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg">
   <img align="center" alt="Julia" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg">
   <img align="center" alt="C" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
   <!--img align="center" alt="C++" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"-->
   <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-<!--   <img align="center" alt="Html" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"> -->
+  <!--   <img align="center" alt="Html" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"> -->
   <img align="center" alt="Jekyll" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jekyll/jekyll-original.svg">
- <!-- img align="center" alt="Ruby" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" /-->
-  
+  <!-- img align="center" alt="Ruby" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" /-->
   <!-- img align="center" alt="Latex" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original-wordmark.svg" -->
-</div>
+</td>
+</tr>
+</table>
   
 
 
@@ -64,11 +67,11 @@ Here are some ideas to get you started:
 <div>
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/mhar-vell/mhar-vell/output/github-snake-dark.svg" />
+          srcset="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/mhar-vell/mhar-vell/output/github-snake.svg" />
+          srcset="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/github-snake.svg" />
   <img alt="snake eating my contributions"
-       src="https://raw.githubusercontent.com/mhar-vell/mhar-vell/output/github-snake.svg" />
+       src="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/github-snake.svg" />
 </picture>
 </div>
 
@@ -79,4 +82,4 @@ Here are some ideas to get you started:
 
 ---
 
-<p align="right">Header photo by <a href="https://unsplash.com/@supergios">Jonny Gios</a> on <a href="https://unsplash.com/photos/hazy-mountain-layers-at-sunset-with-orange-sky-mts9UV3WRa0">Unsplash</a>, free to use under the Unsplash License.</p>
+<p align="right"><sub>Header photo by </sub><a href="https://unsplash.com/@supergios"><sub>Jonny Gios</sub></a><sub> on </sub><a href="https://unsplash.com/photos/hazy-mountain-layers-at-sunset-with-orange-sky-mts9UV3WRa0"><sub>Unsplash</sub></a><sub>, free to use under the Unsplash License.</sub></p>
