@@ -55,6 +55,13 @@ jobs:
           python3 .github/scripts/profile_counters.py \
             --user "${{ github.repository_owner }}" --out dist
 
+      - name: Gerar o card de linguagens mais usadas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/top_languages.py \
+            --user "${{ github.repository_owner }}" --out dist/top-languages.svg
+
       - name: Publicar na branch "output"
         uses: crazy-max/ghaction-github-pages@v4
         with:
