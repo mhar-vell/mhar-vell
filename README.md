@@ -46,33 +46,25 @@ Here are some ideas to get you started:
 
 <b>Technology Stack</b>
 <br><br>
-  <img align="center" alt="R" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg">
-  <img align="center" alt="Julia" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg">
-  <img align="center" alt="C" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
-  <img align="center" alt="C++" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
-  <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-  <img align="center" alt="Jekyll" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jekyll/jekyll-original.svg">
-  <img align="center" alt="Gazebo" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gazebo/gazebo-original.svg">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@main/assets/icons/ros-white.svg" />
-    <img align="center" alt="ROS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ros/ros-original.svg">
-  </picture>
-  <img align="center" alt="Arduino" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@main/assets/icons/markdown-white.svg" />
-    <img align="center" alt="Markdown" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg">
-  </picture>
-  <img align="center" alt="Raspberry Pi" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg">
-  <img align="center" alt="RStudio" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@main/assets/icons/latex-white.svg" />
-    <img align="center" alt="LaTeX" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg">
-  </picture>
-  <img align="center" alt="Jupyter" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg">
-  <img align="center" alt="Anaconda" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg">
-  <img align="center" alt="NumPy" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
-  <img align="center" alt="OpenCV" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg">
-  <!-- img align="center" alt="Ruby" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" /-->
+  <img alt="R" src="https://img.shields.io/badge/R-1F2328?style=flat-square&logo=r&logoColor=white" />
+  <img alt="Julia" src="https://img.shields.io/badge/Julia-1F2328?style=flat-square&logo=julia&logoColor=white" />
+  <img alt="C" src="https://img.shields.io/badge/C-1F2328?style=flat-square&logo=c&logoColor=white" />
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-1F2328?style=flat-square&logo=cplusplus&logoColor=white" />
+  <img alt="Python" src="https://img.shields.io/badge/Python-1F2328?style=flat-square&logo=python&logoColor=white" />
+  <img alt="Jekyll" src="https://img.shields.io/badge/Jekyll-1F2328?style=flat-square&logo=jekyll&logoColor=white" />
+  <img alt="Gazebo" src="https://img.shields.io/badge/Gazebo-1F2328?style=flat-square" />
+  <img alt="ROS" src="https://img.shields.io/badge/ROS-1F2328?style=flat-square&logo=ros&logoColor=white" />
+  <img alt="Arduino" src="https://img.shields.io/badge/Arduino-1F2328?style=flat-square&logo=arduino&logoColor=white" />
+  <img alt="Markdown" src="https://img.shields.io/badge/Markdown-1F2328?style=flat-square&logo=markdown&logoColor=white" />
+  <img alt="Raspberry Pi" src="https://img.shields.io/badge/Raspberry%20Pi-1F2328?style=flat-square&logo=raspberrypi&logoColor=white" />
+  <img alt="RStudio" src="https://img.shields.io/badge/RStudio-1F2328?style=flat-square&logo=rstudioide&logoColor=white" />
+  <img alt="LaTeX" src="https://img.shields.io/badge/LaTeX-1F2328?style=flat-square&logo=latex&logoColor=white" />
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-1F2328?style=flat-square&logo=jupyter&logoColor=white" />
+  <img alt="Anaconda" src="https://img.shields.io/badge/Anaconda-1F2328?style=flat-square&logo=anaconda&logoColor=white" />
+  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-1F2328?style=flat-square&logo=numpy&logoColor=white" />
+  <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-1F2328?style=flat-square&logo=opencv&logoColor=white" />
+  <img alt="FreeCAD" src="https://img.shields.io/badge/FreeCAD-1F2328?style=flat-square&logo=freecad&logoColor=white" />
+  <img alt="Darktable" src="https://img.shields.io/badge/Darktable-1F2328?style=flat-square" />
 <br clear="all">
   
 
