@@ -59,8 +59,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # duas versões: o <picture> do README escolhe pelo tema do leitor,
+          # porque media query não vale dentro de SVG carregado via <img>
           python3 .github/scripts/top_languages.py \
-            --user "${{ github.repository_owner }}" --out dist/top-languages.svg
+            --user "${{ github.repository_owner }}" \
+            --out dist/top-languages.svg --theme light
+          python3 .github/scripts/top_languages.py \
+            --user "${{ github.repository_owner }}" \
+            --out dist/top-languages-dark.svg --theme dark
 
       - name: Publicar na branch "output"
         uses: crazy-max/ghaction-github-pages@v4
@@ -73,6 +79,7 @@ jobs:
       - name: Expurgar o cache do jsDelivr
         run: |
           base=https://purge.jsdelivr.net/gh/${{ github.repository }}@output
-          for f in github-snake.svg github-snake-dark.svg top-languages.svg; do
+          for f in github-snake.svg github-snake-dark.svg \
+                   top-languages.svg top-languages-dark.svg; do
             curl -sS -o /dev/null -w "$f -> %{http_code}\n" "$base/$f"
           done
