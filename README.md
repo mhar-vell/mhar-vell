@@ -40,8 +40,8 @@ Here are some ideas to get you started:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/top-languages-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/top-languages.svg" />
-  <img align="left" width="340" alt="Most used languages" src="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/top-languages.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/top-languages-light.svg" />
+  <img align="left" width="340" alt="Most used languages" src="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/top-languages-light.svg" />
 </picture>
 
 <b>Technology Stack</b>
