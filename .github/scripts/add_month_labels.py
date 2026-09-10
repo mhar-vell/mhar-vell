@@ -27,15 +27,16 @@ MONTHS = {
 FONT = ('-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,'
         'sans-serif')
 
-# Vertical room added above the original viewBox to host the labels.
-STRIP_HEIGHT = 20
-# Baseline offset of the text, measured from the original top of the viewBox.
-BASELINE_OFFSET = 6
+# Gap left between the labels and the highest point the snake reaches.
+CLEARANCE = 6
+# Rough ink height above the baseline for the label font.
+ASCENT = 9
 # Minimum gap (in columns) between the first label and the next one, so a
 # nearly-finished month at the left edge does not collide with its successor.
 MIN_FIRST_GAP = 3
 
 CELL_RE = re.compile(r'<rect class="c[^"]*" x="([-\d.]+)" y="([-\d.]+)"')
+SNAKE_RE = re.compile(r"translate\(-?[\d.]+px,\s*(-?[\d.]+)px\)")
 VIEWBOX_RE = re.compile(r'viewBox="([-\d.]+) ([-\d.]+) ([-\d.]+) ([-\d.]+)"')
 HEIGHT_RE = re.compile(r'(<svg\b[^>]*?)height="([\d.]+)"')
 
@@ -79,6 +80,17 @@ def month_labels(columns: list[float], today_row: int, today: dt.date,
     return [(columns[i], name) for i, name in labels]
 
 
+def snake_ceiling(svg: str, default: float) -> float:
+    """Highest point the snake animation reaches, in canvas coordinates.
+
+    snk reserves two cells of margin above the grid but the path rarely
+    climbs into the second, so reading the animation puts the labels as
+    close as this particular snake allows instead of assuming the worst.
+    """
+    tops = [float(y) for y in SNAKE_RE.findall(svg)]
+    return min(tops) if tops else default
+
+
 def inject(svg: str, labels: list[tuple[float, str]], color: str) -> str:
     m = VIEWBOX_RE.search(svg)
     if not m:
@@ -88,19 +100,22 @@ def inject(svg: str, labels: list[tuple[float, str]], color: str) -> str:
     if 'class="month"' in svg:
         raise SystemExit("month labels already present")
 
+    baseline = snake_ceiling(svg, min_y + 16) - CLEARANCE
+    # Only grow the canvas if the labels would not otherwise fit inside it.
+    top = min(min_y, baseline - ASCENT)
+    grew = min_y - top
+
     svg = svg.replace(
         m.group(0),
-        f'viewBox="{min_x:g} {min_y - STRIP_HEIGHT:g} {width:g} '
-        f'{height + STRIP_HEIGHT:g}"',
+        f'viewBox="{min_x:g} {top:g} {width:g} {height + grew:g}"',
         1,
     )
-    svg = HEIGHT_RE.sub(
-        lambda h: f'{h.group(1)}height="{float(h.group(2)) + STRIP_HEIGHT:g}"',
-        svg,
-        count=1,
-    )
-
-    baseline = min_y - BASELINE_OFFSET
+    if grew:
+        svg = HEIGHT_RE.sub(
+            lambda h: f'{h.group(1)}height="{float(h.group(2)) + grew:g}"',
+            svg,
+            count=1,
+        )
     style = (f'<style>.month{{font:10px {FONT};fill:{color}}}</style>')
     texts = "".join(
         f'<text class="month" x="{x:g}" y="{baseline:g}">{name}</text>'
