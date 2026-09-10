@@ -68,7 +68,7 @@ Here are some ideas to get you started:
   
 
 
-### 🐍 My Contribution Snake
+### 🐍 Mi Aporte Serpiente
 <div>
 <picture>
   <source media="(prefers-color-scheme: dark)"
