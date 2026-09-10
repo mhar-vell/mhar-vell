@@ -31,8 +31,9 @@ TRACK_COLOR = "#7d859033"
 FONT = ('-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,'
         'sans-serif')
 
-BAR_Y, BAR_H = 44, 9
-LEGEND_Y, ROW_H, COLS = 74, 20, 2
+TITLE_Y = 15
+BAR_Y, BAR_H = 33, 9
+LEGEND_Y, ROW_H, COLS = 63, 20, 2
 
 QUERY = """
 query($login: String!, $cursor: String) {
@@ -102,7 +103,7 @@ def build(langs: list[tuple[str, float, str]], title: str) -> str:
         f"<style>text{{font-family:{FONT}}}"
         f".t{{font-size:15px;font-weight:600;fill:{title}}}"
         f".l{{font-size:11.5px;fill:{TEXT_COLOR}}}</style>",
-        f'<text class="t" x="{PAD}" y="26">Most Used Languages</text>',
+        f'<text class="t" x="{PAD}" y="{TITLE_Y}">Most Used Languages</text>',
         f'<rect x="{PAD}" y="{BAR_Y}" width="{inner}" height="{BAR_H}" '
         f'rx="{BAR_H / 2}" fill="{TRACK_COLOR}"/>',
         # The bar is clipped to its own rounded shape so the segments inside
