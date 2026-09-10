@@ -44,7 +44,6 @@ Here are some ideas to get you started:
   <img align="left" width="340" alt="Most used languages" src="https://cdn.jsdelivr.net/gh/mhar-vell/mhar-vell@output/top-languages-light.svg" />
 </picture>
 
-<br><br>
 <b>Technology Stack</b>
 <br><br>
   <img alt="R" src="https://img.shields.io/badge/R-1F2328?style=flat-square&logo=r&logoColor=white" />
